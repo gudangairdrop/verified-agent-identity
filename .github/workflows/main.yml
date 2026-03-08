@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'airdropstore'
+        description: 'gudangairdrop'
         required: true
-        default: 'airdropstore'
+        default: 'gudangairdrop'
       agent_description:
-        description: 'airdropstore'
+        description: 'gudangairdrop'
         required: true
-        default: 'airdropstore AI Agent'
+        default: 'gudangairdrop AI Agent'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "airdropstore", "description": "airdropstore AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "gudangairdrop", "description": "gudangairdrop AI Agent"}'
